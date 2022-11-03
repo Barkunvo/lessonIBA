@@ -1,0 +1,11 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Echo') { 
+            steps {
+                echo "$build_id"
+                echo "$job_name"
+            }
+        }
+    }
+}
